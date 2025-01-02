@@ -2,11 +2,12 @@ import axios from "axios";
 import { loggedIn } from "./Authorization";
 
 
-const res = await loggedIn()
-const token = res?.token
+
 
 //all
 export const getAll = async () => {
+    const res = await loggedIn()
+    const token = res?.token
     if (token) {
         const result: any = await axios({
             method: "GET",
@@ -20,6 +21,8 @@ export const getAll = async () => {
 }
 //one
 export const getUserOne = async (id: number) => {
+    const res = await loggedIn()
+    const token = res?.token
     if (token) {
         const result: any = await axios({
             method: "GET",
@@ -33,6 +36,8 @@ export const getUserOne = async (id: number) => {
 }
 //create
 export const postUsers = async (dataObject: object) => {
+    const res = await loggedIn()
+    const token = res?.token
     if (token) {
         const result: any = await axios({
             method: "POST",
@@ -47,6 +52,8 @@ export const postUsers = async (dataObject: object) => {
 }
 //edit
 export const putUsers = async (id: number, dataObject: object) => {
+    const res = await loggedIn()
+    const token = res?.token
     if (token) {
         const result: any = await axios({
             method: "PUT",
@@ -61,6 +68,8 @@ export const putUsers = async (id: number, dataObject: object) => {
 }
 //delete
 export const deleteUsers = async (id: number) => {
+    const res = await loggedIn()
+    const token = res?.token
     if (token) {
         const result: any = await axios({
             method: "DELETE",

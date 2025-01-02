@@ -38,7 +38,7 @@ export const router=createRouter({
 })
 
 //guards
-router.beforeEach(async (to, from)=>{
+router.beforeEach(async (to, /*from*/)=>{
     const auth=await loggedIn()
     //restringe si no iniciaste sesión
     if (
