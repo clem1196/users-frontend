@@ -1,0 +1,100 @@
+/* App.vue*/
+.navbar.navbar-expand-lg.navbar-dark.primary {
+  background-color: rgb(0, 105, 232);
+  color: #f7fffd;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  color: #e3f2fd;
+  margin-left: 16px;
+  font-style: italic;
+  justify-content: center;
+}
+.d-flex.myFlex {
+  margin-bottom: 0.3rem;
+}
+
+/*DashBoard*/
+.nav.mynav {  
+  align-items: flex-start;
+  background-color: rgb(247, 247, 247);
+  padding: 1%;
+  width: 250px;
+  height: 50rem;  
+}
+
+.nav-link.btnLink {
+  color: rgb(87, 87, 89);
+  margin-top: 0.9rem;
+}
+.nav-link.btnLink.active {
+  color: white;
+}
+.tab-content{
+  width: 1200px;
+}
+/*UserAll*/
+
+.icon-add {
+  color: #0471ff;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.icon-add:hover {
+  color: #1253c5;
+  font-size: 2rem;
+}
+.icon-print {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #545a63;
+  margin-right: 16px;
+}
+.icon-print:hover {
+  font-size: 1.5rem;
+  color: #252a31;
+}
+/*scala de impresión*/
+@media print{
+  body{
+    visibility: hidden;
+  }
+  .scale-table {
+    visibility: visible;
+    position: absolute;
+    left: 2px;
+    right: 1px;
+
+  }
+}
+.bi-search {
+  color: #909090;
+  position: absolute;
+  padding-top: 32px;
+  padding-left: 8px;
+  transform: translateY(-50%);
+}
+.form-control-sm.search {
+  padding-left: 1.5rem;
+  border-radius: 0.85rem;
+}
+.barra-white {
+  color: white;
+  padding: 4px;
+}
+.text-danger{
+  font-size: 12px;
+  font-style: italic;
+}
+.text-warning{
+  font-size: 12px;
+  font-style: italic;
+}
+.text-success{
+  font-size: 12px;
+  font-style: italic;
+}
+
